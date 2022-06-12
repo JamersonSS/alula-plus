@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-defundo: #00030C;
+    --cor-de-titulo-principal: #FFFFFF;
+    --cor-de-titulo-secundario: #C0C0C0;
+    --cor-do-botao: #167BF7;
+    --muda-a-cor-do-butao: #3c91f8;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background: var(--cor-defundo);
+    color: var(--cor-de-titulo-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* area principal do site */
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--cor-do-botao);
+    color: var(--cor-de-titulo-principal);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--muda-a-cor-do-butao);
+    color: var(--cor-defundo);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-de-titulo-principal);
+}
+
+.botao_secundario:hover {
+    color: var(--muda-a-cor-do-butao);
+    background-color: transparent;
+    border: 2px solid var(--muda-a-cor-do-butao);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cor-de-titulo-secundario);
+}
+
+
+/* area secundaria do site */
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0, 1em;
+}
+
+.descricao__texto {
+    color: var(--cor-de-titulo-secundario);
+}
+
+.descricao__texto {
+    margin-right: 3em;
+}
+
+.secundario__botao {
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dispositivos__listas {
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+    list-style-type: none;
+}
+
+.lista__itens {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* rodape do site */
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__listas {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.rodape__link {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.rodape__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__link a:hover {
+    color: var(--cor-do-botao);
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cor-de-titulo-secundario);
+    font-size: 14px;
+}
